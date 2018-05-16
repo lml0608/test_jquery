@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+
+            //next() 同级的下一个元素
+            //nextAll() 同级的所有元素
+            $('#div1').nextAll('p').css({color:'red'});
+
+            //返回上一级的父元素
+            $('#span01').parent().css({width:'100px',height:'100px',background:'gold'})
+            //选择离最近的元素，可能是父元素，可以是是只元素
+            $('#span02').closest('div').css({width:'200px',height:'200px',background:'red'})
+        })
+    </script>
+
+
+</head>
+<body>
+<div id="div1">这是一个div元素</div>
+<div >这是一个div元素</div>
+<p>这是一个p元素</p>
+
+<div id="div2">
+    <a href="#">百度网</a>
+    <span id="span01">span元素</span>
+</div>
+
+<div>
+    <p>这是一个p元素</p>
+    <div id="div3">
+    <a href="#">百度网</a>
+    <span id="span02">span元素</span>
+    </div>
+
+</div>
+</body>
+</html>

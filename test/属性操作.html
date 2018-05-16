@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            //alert($('.box').html());
+            $('.box').html('<span>添加文件</span>');
+            alert($('.box').html()); //获取标签的内容
+            //alert($('.box').text());//获取文本的内容
+            $('.box').attr({title:'这是一个div!'});
+            //alert($('.box').attr('class'));
+            //alert($('.box').attr('title'));
+            alert($('#check').prop('checked'));//获取属性值
+            $('#check').prop({checked:true});//设置属性值
+        })
+    </script>
+
+
+</head>
+<body>
+
+<div class="box">这是一个div元素</div>
+<input type="checkbox" name="" id="check" checked="checked">多选
+</ul>
+</body>
+</html>

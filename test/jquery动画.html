@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+
+    <script type="text/javascript">
+
+
+        $(function () {
+
+            //属性设置，动画加载的时间
+            //参数：
+            //动画曲线swing 开始和结束慢速，中间快速  linear匀速
+            //回调函数，
+            $('#div1').animate({width:200,height:200},2000,'swing',function () {
+
+                //动画完成后做的事情
+                //alert('动画完成！');
+                $(this).animate({marginLeft:500},1000,'linear');
+            });
+        });
+
+
+    </script>
+    <style type="text/css">
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1" class="box"></div>
+
+</body>
+</html>

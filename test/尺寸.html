@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            //alert($('#div1').outerWidth())
+            //alert($('#div1').offset().left);
+           var pos = $('#div1').offset();
+
+            document.title = pos.left + " | " + pos.top;
+        })
+    </script>
+
+    <style type="text/css">
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #div1{
+            width: 100px;
+            height: 100px;
+            border: 40px solid red;
+            padding: 50px;
+            margin: 100px;
+
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div1">这是一个div元素</div>
+</body>
+</html>
